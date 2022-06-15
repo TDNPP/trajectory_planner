@@ -36,8 +36,8 @@ This packages allow you generating collision-free trajectory based on your map. 
     To realize global navigation, RRT/RRT* planner is used the global planner in this [repo](https://github.com/Zhefan-Xu/global_planner). It is not required if you want to write your own code using this repo. It is just for navigation demo.
     ```
     cd ~/catkin_ws/src
-    git clone https://github.com/Zhefan-Xu/global_planner.git # OPTIONAL (ONLY required if you want to play with our demo)
-    git clone https://github.com/Zhefan-Xu/trajectory_planner.git
+    git clone https://github.com/maxibooksiyi/global_planner.git # MANDATORY: it is a build dependency for this package
+    git clone https://github.com/TDNPP/trajectory_planner.git
 
     # make
     cd ~/catkin_ws
