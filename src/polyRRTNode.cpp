@@ -56,8 +56,8 @@ int main(int argc, char** argv){
 	std::thread goalVisWorker_ = std::thread(publishGoalVis);
 	
 	const int N = 3; // dimension
-	globalPlanner::rrtOctomap<N> rrtplanner (nh);
-	cout << rrtplanner << endl;
+	globalPlanner::rrtOctomap<N> rrtplanner {};
+	cout << &rrtplanner << endl;
 
 	trajPlanner::polyTrajOctomap polyPlanner (nh);
 	cout << polyPlanner << endl;
